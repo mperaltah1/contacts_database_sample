@@ -14,6 +14,9 @@ Para asegurar la consistencia y profesionalismo del código, se han aplicado las
 5.  **Foreign Keys (FK):** Nombradas como `tabla_relacionada_id` (ejemplo: `contact_id`).
 
 ---
+## Diagrama ER
+![preview](MyContacts.png)
+
 
 ## Estructura de la Base de Datos (DDL)
 

@@ -16,6 +16,31 @@ Para asegurar la consistencia y profesionalismo del código, se han aplicado las
 ## Diagrama ER
 ![preview](/Support-Files/MyContacs.png)
 
+## Análisis del Modelo Relacional
+
+### Label_Type
+Es para los tipos de etiquetas. Sirve para categorizar si una descripción pertenece a un teléfono, a un correo o a ambos.
+*Justificación:* Implementar esto evita errores de lógica en la interfaz (como que un usuario intente asignar la etiqueta "WhatsApp" a un correo electrónico).
+
+### Country_Code
+Centraliza los prefijos telefónicos internacionales (ej. +502, +52).
+*Justificación:* Evita que el programador tenga que validar manualmente cada código de país y permite estandarizar las búsquedas internacionales sin repetir el nombre del país en cada teléfono.
+
+### Label
+Guarda las descripciones de uso, como "Personal", "Trabajo" o "Educational".
+*Justificación:* Al ser una tabla independiente, el sistema es escalable. Si el usuario necesita una nueva categoría, solo se inserta una fila en la tabla sin tocar el código de la aplicación.
+
+### Contact
+Es el corazón del sistema. Almacena los datos biográficos de la persona.
+*Justificación:* Dividimos los nombres y apellidos en columnas separadas (atomicidad) para que el sistema pueda ordenar y filtrar de forma eficiente (por ejemplo, buscar a todos los que tengan el apellido "Pérez").
+
+### Phone
+Gestiona la relación **Uno a Muchos (1:N)** entre el contacto y sus números.
+*Justificación:* Permite que una persona tenga varios números (casa, móvil, oficina) sin crear columnas vacías en la tabla principal, optimizando el espacio en disco.
+
+### Email
+Funciona igual que la tabla de teléfonos, pero para direcciones de correo electrónico.
+*Justificación:* Mantiene el diseño modular. Al separar los correos, se facilita la validación de formatos (ej. que contengan un `@`) sin interferir con el resto de la información del contacto.
 
 
 ## Estructura de la Base de Datos (DDL)

@@ -79,7 +79,8 @@ CREATE TABLE IF NOT EXISTS email (
     label_id INT NOT NULL,
     CONSTRAINT fk_email_contact FOREIGN KEY (contact_id) REFERENCES Contact(id),
     CONSTRAINT fk_email_label FOREIGN KEY (label_id) REFERENCES Label(id)
-);```
+);
+```
 
 ---
 

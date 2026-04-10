@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS phone (
     contact_id INT NOT NULL,
     label_id INT NOT NULL, 
     country_code_id INT NOT NULL,
-    CONSTRAINT fk_phone_contact FOREIGN KEY (contact_id) REFERENCES Contact(id),
+    CONSTRAINT fk_phone_contact FOREIGN KEY (contact_id) REFERENCES Contact(id) ON DELETE CASCADE,
     CONSTRAINT fk_phone_label FOREIGN KEY (label_id) REFERENCES Label(id),
     CONSTRAINT fk_phone_country FOREIGN KEY (country_code_id) REFERENCES Country_Code(id)
 );
@@ -57,6 +57,6 @@ CREATE TABLE IF NOT EXISTS email (
     email_address VARCHAR(255) NOT NULL,
     contact_id INT NOT NULL,
     label_id INT NOT NULL,
-    CONSTRAINT fk_email_contact FOREIGN KEY (contact_id) REFERENCES Contact(id),
+    CONSTRAINT fk_email_contact FOREIGN KEY (contact_id) REFERENCES Contact(id) ON DELETE CASCADE,
     CONSTRAINT fk_email_label FOREIGN KEY (label_id) REFERENCES Label(id)
 );

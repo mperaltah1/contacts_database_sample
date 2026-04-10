@@ -15,7 +15,7 @@ Para asegurar la consistencia y profesionalismo del código, se han aplicado las
 
 ---
 ## Diagrama ER
-![preview](/MyContacs.png)
+![preview](/Support-Files/MyContacs.png)
 
 
 ## Estructura de la Base de Datos (DDL)

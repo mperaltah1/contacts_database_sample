@@ -1,10 +1,10 @@
-Drop schema MyContacts_sample;
+DROP SCHEMA IF EXISTS My_Contacts_Sample;
 
 /**** Script de Estructura (DDL) *****/
 
 -- Crea el esquema si no existe
-CREATE SCHEMA IF NOT EXISTS MyContacts_sample;
-USE MyContacts_sample;
+CREATE SCHEMA IF NOT EXISTS My_Contacts_Sample;
+USE My_Contacts_Sample;
 
 -- Tabla de códigos de área para Países (Catálogo)
 CREATE TABLE IF NOT EXISTS Country_Code (

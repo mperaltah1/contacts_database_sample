@@ -50,6 +50,8 @@ Funciona igual que la tabla de teléfonos, pero para direcciones de correo elect
 
 ## Estructura de la Base de Datos (DDL)
 ``` sql
+Drop schema MyContacts_sample;
+
 /**** Script de Estructura (DDL) *****/
 
 -- Crea el esquema si no existe

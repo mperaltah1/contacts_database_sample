@@ -1,3 +1,5 @@
+Drop schema MyContacts_sample;
+
 /**** Script de Estructura (DDL) *****/
 
 -- Crea el esquema si no existe

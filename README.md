@@ -56,7 +56,7 @@ DROP SCHEMA IF EXISTS My_Contacts_Sample;
 
 -- Crea el esquema si no existe
 CREATE SCHEMA IF NOT EXISTS My_Contacts_Sample;
-USE MyContacts_samMy_Contacts_Sampleple;
+USE My_Contacts_Sample;
 
 -- Tabla de códigos de área para Países (Catálogo)
 CREATE TABLE IF NOT EXISTS Country_Code (

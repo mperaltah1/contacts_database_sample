@@ -1,6 +1,6 @@
 /**** Script de Datos (DML) *****/
 
-USE MyContacts;
+USE MyContacts_sample;
 
 -- Inserts para Country_Code (Catálogo)
 INSERT INTO Country_Code (prefix, country_name) VALUES ('+502', 'Guatemala');

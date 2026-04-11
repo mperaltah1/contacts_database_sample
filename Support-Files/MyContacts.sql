@@ -1,8 +1,8 @@
 /**** Script de Estructura (DDL) *****/
 
 -- Crea el esquema si no existe
-CREATE SCHEMA IF NOT EXISTS MyContacts;
-USE MyContacts;
+CREATE SCHEMA IF NOT EXISTS MyContacts_sample;
+USE MyContacts_sample;
 
 -- Tabla de códigos de área para Países (Catálogo)
 CREATE TABLE IF NOT EXISTS Country_Code (

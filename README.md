@@ -119,7 +119,7 @@ CREATE TABLE IF NOT EXISTS email (
 
 ## Inserción de Datos de Prueba (DML)
 ``` sql
-USE MyContacts_sample;
+USE My_Contacts_sample;
 
 -- Inserts para Country_Code (Catálogo)
 INSERT INTO Country_Code (prefix, country_name) VALUES ('+502', 'Guatemala');

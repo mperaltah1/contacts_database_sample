@@ -142,8 +142,8 @@ INSERT INTO Label (label_name, label_type_id) VALUES ('Educational', 2);      --
 INSERT INTO Contact (first_name, last_name, maternal_last_name, nickname, company_name, birth_date) 
 VALUES ('Mario', 'Pérez', 'García', 'Mayito', 'EEGSA', '1990-05-15');
 
-INSERT INTO Contact (first_name, last_name, nickname, company_name, birth_date) 
-VALUES ('Ana', 'Lucía', 'Analú', 'Banco Industrial', '1995-08-22');
+INSERT INTO Contact (first_name, second_name, last_name, nickname, company_name, birth_date) 
+VALUES ('Ana', 'Lucía', 'Gonzalez', 'Analú', 'Banco Industrial', '1995-08-22');
 
 INSERT INTO Contact (first_name, last_name, maternal_last_name, nickname) 
 VALUES ('Carlos', 'Mendoza', 'Ruiz', 'Charly');

@@ -1,6 +1,10 @@
-# Ejemplo base de datos contactos desde cero
+# Ejemplo de base de datos de contactos desde cero
 
 En esta guía se detallan los pasos a seguir para crear el diseño lógico y físico de una base de datos relacional para la gestión de contactos, enfocándose en las mejores prácticas de normalización y estándares de la industria.
+
+## Instrucciones
+Lea el contenido a detalle y trate de comprender los conceptos aca mencionados, luego de eso copie y ejecute los scripts tal como vimos en clase.
+
 
 ## Naming Conventions
 
@@ -39,7 +43,7 @@ Es el corazón del sistema. Almacena los datos biográficos de la persona.
 **Justificación:** Dividimos los nombres y apellidos en columnas separadas (atomicidad) para que el sistema pueda ordenar y filtrar de forma eficiente (por ejemplo, buscar a todos los que tengan el apellido "Pérez").
 
 ### Phone
-Gestiona la relación **Uno a Muchos (1:N)** entre el contacto y sus números.
+Gestiona la relación **uno a muchos (1:N)** entre el contacto y sus números.
 
 **Justificación:** Permite que una persona tenga varios números (casa, móvil, oficina) sin crear columnas vacías en la tabla principal, optimizando el espacio en disco.
 
@@ -155,10 +159,10 @@ INSERT INTO Contact (first_name, last_name, maternal_last_name, nickname)
 VALUES ('Carlos', 'Mendoza', 'Ruiz', 'Charly');
 
 INSERT INTO Contact (first_name, middle_name, last_name, company_name) 
-VALUES ('Sofía', 'Isabel', 'Ramírez', 'Universidad Mariano Galvez'); 
+VALUES ('Sofía', 'Isabel', 'Ramírez', 'Universidad Mariano Gálvez'); 
 
 INSERT INTO Contact (first_name, last_name, company_name) 
-VALUES ('Roberto', 'Gómez', 'Universidad Mariano Galvez'); 
+VALUES ('Roberto', 'Gómez', 'Universidad Mariano Gálvez'); 
 
 -- Inserts para phone
 INSERT INTO phone (phone_number, contact_id, label_id, country_code_id) VALUES ('55551234', 1, 1, 1);
@@ -196,7 +200,7 @@ FROM Contact;
 ```
 
 ### 2. Obtener contactos que trabajan en la 'Universidad Mariano Gálvez'
-Filtra los contactos por empresa una específica, en este caso la UMG
+Filtra los contactos por empresa específica, en este caso la Universidad Mariano Gálvez.
 ```sql
 SELECT first_name, last_name, company_name 
 FROM Contact 

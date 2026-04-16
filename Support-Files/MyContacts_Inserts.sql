@@ -32,10 +32,10 @@ INSERT INTO Contact (first_name, last_name, maternal_last_name, nickname)
 VALUES ('Carlos', 'Mendoza', 'Ruiz', 'Charly');
 
 INSERT INTO Contact (first_name, middle_name, last_name, company_name) 
-VALUES ('Sofía', 'Isabel', 'Ramírez', 'Universidad Mariano Galvez'); 
+VALUES ('Sofía', 'Isabel', 'Ramírez', 'Universidad Mariano Gálvez'); 
 
 INSERT INTO Contact (first_name, last_name, company_name) 
-VALUES ('Roberto', 'Gómez', 'Universidad Mariano Galvez'); 
+VALUES ('Roberto', 'Gómez', 'Universidad Mariano Gálvez'); 
 
 -- Inserts para phone
 INSERT INTO phone (phone_number, contact_id, label_id, country_code_id) VALUES ('55551234', 1, 1, 1);
